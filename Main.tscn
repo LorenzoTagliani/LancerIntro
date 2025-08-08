@@ -47,8 +47,9 @@ stretch_mode = 2
 [node name="Censor" type="ColorRect" parent="."]
 layout_mode = 0
 offset_left = 974.0
+offset_top = 143.0
 offset_right = 1920.0
-offset_bottom = 1080.0
+offset_bottom = 1223.0
 color = Color(0, 0, 0, 1)
 
 [node name="DialogBox" type="Label" parent="."]

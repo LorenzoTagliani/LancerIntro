@@ -109,7 +109,7 @@ LanceOS initialized
 OMNINET CONNECTION . . . 
 CONNECTION SUCCESSFUL!"
 
-var censor_mov = 0
+var censor_mov = 143
 
 var piro := [
 	"Pilot ID: 56924",
@@ -277,43 +277,43 @@ func mostra_dialoghi() -> void:
 	my_label.text = ""
 	$Control/TextureRect.texture = piro_char
 	for p in piro:
-		censor_mov += 150
+		censor_mov += 115
 		await scrivi_testo_con_delay_dinamico(p, "", 0, 0.04)
 		$Censor.position = Vector2(974.0, censor_mov)
 		await _delay(0.5) 
 	my_label.text = ""
-	censor_mov = 0
+	censor_mov = 143
 	$Censor.position = Vector2(974.0, censor_mov)
 	$Control/TextureRect.texture = michela_char
 	for m in michela:
-		censor_mov += 150
+		censor_mov += 115
 		await scrivi_testo_con_delay_dinamico(m, "", 0, 0.04)
 		$Censor.position = Vector2(974.0, censor_mov)
 		await _delay(0.5) 
 	my_label.text = ""
-	censor_mov = 0
+	censor_mov = 143
 	$Censor.position = Vector2(974.0, censor_mov)
 	$Control/TextureRect.texture = taglia_char
 	for t in taglia:
-		censor_mov += 150
+		censor_mov += 115
 		await scrivi_testo_con_delay_dinamico(t, "", 0, 0.04)
 		$Censor.position = Vector2(974.0, censor_mov)
 		await _delay(0.5) 
 	my_label.text = ""
-	censor_mov = 0
+	censor_mov = 143
 	$Censor.position = Vector2(974.0, censor_mov)
 	$Control/TextureRect.texture = ian_char
 	for i in ian:
-		censor_mov += 150
+		censor_mov += 115
 		await scrivi_testo_con_delay_dinamico(i, "", 0, 0.04)
 		$Censor.position = Vector2(974.0, censor_mov)
 		await _delay(0.5) 
 	my_label.text = ""
-	censor_mov = 0
+	censor_mov = 143
 	$Censor.position = Vector2(974.0, censor_mov)
 	$Control/TextureRect.texture = samu_char
 	for s in samu:
-		censor_mov += 150
+		censor_mov += 115
 		await scrivi_testo_con_delay_dinamico(s, "", 0, 0.04)
 		$Censor.position = Vector2(974.0, censor_mov)
 		await _delay(0.5) 
