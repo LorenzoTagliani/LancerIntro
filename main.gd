@@ -194,6 +194,7 @@ var ending := [
 @onready var my_label := $DialogBox  # Sostituisci con il path corretto della tua Label
 
 func _ready():
+	$bgPlayer.play();
 	mostra_dialoghi()
 
 func _delay(seconds: float) -> void:
@@ -209,24 +210,36 @@ func scrivi_testo_con_delay_dinamico(
 	elif text == "RAM CHECK: [OK]":
 		my_label.text = ""
 		my_label.text = corrected_ram
+		$AudioPlayer.play()
 	elif text == "CPU CHECK: [OK]":
 		my_label.text = ""
 		my_label.text = corrected_cpu
+		$AudioPlayer.play()
 	elif text == "DISK CHECK: [OK]":
 		my_label.text = ""
 		my_label.text = corrected_disk
+		$AudioPlayer.play()
 	else:
 		while i < text.length():
 			var delay := normal_delay
 			if slow_word != "" and text.substr(i, slow_word.length()) == slow_word:
 				for j in range(slow_word.length()):
+					if slow_word != " ":
+						$AudioPlayer.play()
 					my_label.text += text[i]
 					await _delay(slow_delay)
 					i += 1
 			else:
-				my_label.text += text[i]
-				await _delay(delay)
-				i += 1
+				if text == "C A S T I G A T E   T H E   E N E M I E S   O F   T H E   G O D H E A D":
+					my_label.text += text[i]
+					await _delay(delay)
+					i += 1
+				else:
+					if slow_word != " ":
+						$AudioPlayer.play()
+					my_label.text += text[i]
+					await _delay(delay)
+					i += 1
 		if text == "C A S T I G A T E   T H E   E N E M I E S   O F   T H E   G O D H E A D":
 			my_label.text = ""
 			my_label.text = corrected_godhead
@@ -246,7 +259,7 @@ func mostra_dialoghi() -> void:
 		elif riga == "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -":
 			await scrivi_testo_con_delay_dinamico(riga, "", 0, 0.01)
 		elif riga == "C A S T I G A T E   T H E   E N E M I E S   O F   T H E   G O D H E A D":
-			await scrivi_testo_con_delay_dinamico(riga, "", 0, 0.0003)
+			await scrivi_testo_con_delay_dinamico(riga, "", 0.0002, 0.0002)
 		elif riga == "[INFO] Initializing syscore kernel bridge...":
 			my_label.text = ""
 			my_label.text = gibberish_1
@@ -321,3 +334,5 @@ func mostra_dialoghi() -> void:
 		else:
 			await scrivi_testo_con_delay_dinamico(riga, "", 0.2, 0.04)
 		await _delay(0.5) 
+	await _delay(4)
+	get_tree().quit()
