@@ -114,21 +114,21 @@ var censor_mov = 143
 var piro := [
 	"Pilot ID: 56924",
 	"Pilot codename: ",
-	"Pilot age: ",
-	"Pilot blood type: ",
+	"Pilot age: TBA",
+	"Pilot blood type: TBA",
 	"Frame: Everest",
-	"Frame codename: ",
+	"Frame codename: TBA",
 	"Status: ALIVE"
 ]
 var piro_char = load("res://dh-nobg.png");
 
 var michela := [
 	"Pilot ID: 19402",
-	"Pilot codename: ",
-	"Pilot age: ",
-	"Pilot blood type: ",
+	"Pilot codename: Firefly",
+	"Pilot age: TBA",
+	"Pilot blood type: TBA",
 	"Frame: Everest",
-	"Frame codename: ",
+	"Frame codename: TBA",
 	"Status: ALIVE"
 ]
 var michela_char = load("res://mk-nobg.png");
@@ -136,10 +136,10 @@ var michela_char = load("res://mk-nobg.png");
 var taglia := [
 	"Pilot ID: 71932",
 	"Pilot codename: ",
-	"Pilot age: ",
-	"Pilot blood type: ",
+	"Pilot age: TBA",
+	"Pilot blood type: TBA",
 	"Frame: Everest",
-	"Frame codename: ",
+	"Frame codename: TBA",
 	"Status: ALIVE"
 ]
 var taglia_char = load("res://dh-nobg.png");
@@ -147,10 +147,10 @@ var taglia_char = load("res://dh-nobg.png");
 var ian := [
 	"Pilot ID: 17232",
 	"Pilot codename: ",
-	"Pilot age: ",
-	"Pilot blood type: ",
+	"Pilot age: TBA",
+	"Pilot blood type: TBA",
 	"Frame: Everest",
-	"Frame codename: ",
+	"Frame codename: TBA",
 	"Status: ALIVE"
 ]
 var ian_char = load("res://Balor-nobg.png");
@@ -158,10 +158,10 @@ var ian_char = load("res://Balor-nobg.png");
 var samu := [
 	"Pilot ID: 91238",
 	"Pilot codename: ",
-	"Pilot age: ",
-	"Pilot blood type: ",
+	"Pilot age: TBA",
+	"Pilot blood type: TBA",
 	"Frame: Everest",
-	"Frame codename: ",
+	"Frame codename: TBA",
 	"Status: ALIVE"
 ]
 var samu_char = load("res://dh-nobg.png");
