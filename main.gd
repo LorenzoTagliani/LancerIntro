@@ -113,11 +113,12 @@ var censor_mov = 143
 
 var piro := [
 	"Pilot ID: 56924",
-	"Pilot codename: ",
-	"Pilot age: TBA",
-	"Pilot blood type: TBA",
-	"Frame: Everest",
-	"Frame codename: TBA",
+	"Pilot codename: Vetala",
+	"Pilot age: 25",
+	"Pilot blood type: 0+",
+	"Current Frame: Everest",
+	"Current Frame codename: Long Night",
+	"Suggested Frame: Death's Head",
 	"Status: ALIVE"
 ]
 var piro_char = load("res://dh-nobg.png");
@@ -125,46 +126,50 @@ var piro_char = load("res://dh-nobg.png");
 var michela := [
 	"Pilot ID: 19402",
 	"Pilot codename: Firefly",
-	"Pilot age: TBA",
-	"Pilot blood type: TBA",
-	"Frame: Everest",
-	"Frame codename: TBA",
+	"Pilot age: 40",
+	"Pilot blood type: 0",
+	"Current Frame: Everest",
+	"Current Frame codename: Desperate Measure",
+	"Suggested Frame: Gengis",
 	"Status: ALIVE"
 ]
-var michela_char = load("res://mk-nobg.png");
+var michela_char = load("res://gengis-nobg.png");
 
 var taglia := [
 	"Pilot ID: 71932",
-	"Pilot codename: ",
-	"Pilot age: TBA",
-	"Pilot blood type: TBA",
-	"Frame: Everest",
-	"Frame codename: TBA",
+	"Pilot codename: Mimir",
+	"Pilot age: 72",
+	"Pilot blood type: AB",
+	"Current Frame: Everest",
+	"Current Frame codename: Hœnir",
+	"Suggested Frame: Black Witch",
 	"Status: ALIVE"
 ]
-var taglia_char = load("res://dh-nobg.png");
+var taglia_char = load("res://blackwitch-nobg.png");
 
 var ian := [
 	"Pilot ID: 17232",
-	"Pilot codename: ",
-	"Pilot age: TBA",
-	"Pilot blood type: TBA",
-	"Frame: Everest",
-	"Frame codename: TBA",
+	"Pilot codename: Kawai",
+	"Pilot age: 35",
+	"Pilot blood type: A+",
+	"Current Frame: Everest",
+	"Current Frame codename: Final Argument",
+	"Suggested Frame: Balor",
 	"Status: ALIVE"
 ]
 var ian_char = load("res://Balor-nobg.png");
 
 var samu := [
 	"Pilot ID: 91238",
-	"Pilot codename: ",
-	"Pilot age: TBA",
-	"Pilot blood type: TBA",
-	"Frame: Everest",
-	"Frame codename: TBA",
+	"Pilot codename: Reef",
+	"Pilot age: 201",
+	"Pilot blood type: 0",
+	"Current Frame: Everest",
+	"Current Frame codename: Basic Procedure",
+	"Suggested Frame: Vlad",
 	"Status: ALIVE"
 ]
-var samu_char = load("res://dh-nobg.png");
+var samu_char = load("res://vlad-nobg.png");
 
 var ending := [
 	"- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
